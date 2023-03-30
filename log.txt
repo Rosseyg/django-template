@@ -1,0 +1,8 @@
+Log created at 2023-03-30 14:29:03
+
+Django version: 4.1.7
+Django package path: G:\Dev\Web\django-template\venv\lib\site-packages\django
+
+Python version: 3.10.10
+Python package path: C:\Users\R0553YG\AppData\Local\Programs\Python\Python310\lib
+
