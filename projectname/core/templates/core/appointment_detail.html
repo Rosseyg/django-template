@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ appointment.service }} with {{ appointment.stylist }} on {{ appointment.start_time|date:"F j, Y" }} at {{ appointment.start_time|time:"g:i a" }}</h1>
+  <p><strong>Member:</strong> {{ appointment.member }}</p>
+  <p><strong>Start Time:</strong> {{ appointment.start_time }}</p>
+  <p><strong>End Time:</strong> {{ appointment.end_time }}</p>
+  <p><strong>Notes:</strong> {{ appointment.notes }}</p>
+  <p><strong>Status:</strong> {{ appointment.status }}</p>
+{% endblock %}
+

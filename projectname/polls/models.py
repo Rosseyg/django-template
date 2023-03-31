@@ -10,7 +10,7 @@ class Question(models.Model):
     question_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
     author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
-    tags = models.ManyToManyField(Tag, related_name='questions', null=True, blank=True)
+    tags = models.ManyToManyField(Tag, related_name='questions', blank=True)
     is_featured = models.BooleanField(default=False, null=True, blank=True)
     
     def published_last_week(self):
